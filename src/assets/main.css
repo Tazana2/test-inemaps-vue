@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+:root {
+    --p-white: #e8f1a6;
+    --p-black: #1B1D24;
+    --s-black: #333333;
+    --p-gray: #191A19;
+    --s-green: rgb(8, 90, 8, 0.8);
+    --p-green: #1F4C28;
+    --cards-green: rgb(69,146,80);
+    --lighter-green: #387450;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    scrollbar-width: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li,
+a,
+button {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.container-nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px 2vw;
+    background-color: var(--p-black);
+    box-shadow: 0 0 40px #0d0d0d;
+    z-index: 111;
+}
+
+.container-logo {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.container-links {
+    list-style: none;
+}
+
+.container-links li {
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+.container-links li a {
+    transition: all 0.6s ease 0s;
+}
+
+.container-links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: var(--p-green);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: var(--p-green);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    box-shadow: 7px 7px 0px var(--s-green);
+    top: -5px;
+    left: -5px;
+}
+
+span {
+    color: var(--p-green);
+    transition: all 0.8s ease 0s;
+}
+
+span:hover {
+    color: var(--cards-green);
+    transition: all 0.4s ease 0s;
+}
+
+#profile-link {
+    cursor: default;
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: #1b1d24b7;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+.container-links li:hover .menu-vertical{
+	display: block;
+}
+
+.main-background {
+    background: url(https://i.postimg.cc/FHZWWQQT/Background-web-main.jpg);
+    box-shadow: inset 0 0 40px #0d0d0d;
+    background-repeat: repeat;
+}
+
+.minimum-sizes {
+    min-height: 85vh;
+    min-width: 100vw;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.simple-text {
+    text-align: justify;
+}
+
+.dark {
+    color: var(--p-black);
+}
+
+.all {
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    row-gap: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.all-content {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 20px;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--p-black);
+    color: #edf0f1;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/*Botón para ir arriba*/
+.go-top-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: var(--s-green);
+    border-radius: 50%;
+    transition: .2s;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button i {
+    font-size: 75%;
+    color: white;
+    transition: .2s;
+}
+
+.show {
+    animation: popup .45s ease-in-out;
+    z-index: 1;
+}
+
+@keyframes popup {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    50% {
+        width: 65px;
+        height: 65px;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/*Imagen dinda :D*/
+.container-img img {
+    height: 250px;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 5px solid  var(--p-green);
+    transition: all .5s;
+}
+
+.container-img img:hover {
+    box-shadow: 10px 15px 0px var(--lighter-green);
+}

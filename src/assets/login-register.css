@@ -1,0 +1,40 @@
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: var(--p-black);
+    min-width: 30vw;
+    max-width: 80vw;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.login-text {
+    margin-bottom: 5%;
+}
+
+#login-btn {
+    margin: 5%;
+}
+
+.input-text {
+    margin: 1%;
+    padding: 2%;
+    border-radius: 15px;
+    border: 0px;
+    width: 65%;
+    transition: all .5s;
+}
+
+.input-text::placeholder {
+    color: darkgreen;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+}
